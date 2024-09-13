@@ -4,15 +4,15 @@ import logo from "../assets/imgs/logo/logo.png";
 const currentYear = new Date().getFullYear();
 
 const infos = {
-  name: "A Definir",
+  name: "Juliano Aleixo Advocacia",
   phone: {
-    ddd: "A Definir",
-    firstPart: "A Definir", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "A Definir", // Apenas os 4 últimos números
+    ddd: "69",
+    firstPart: "99980", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "7532", // Apenas os 4 últimos números
   },
-  email: "A Definir", // Email desejado pelo cliente (ex: contato)
-  domain: "A Definir", // Sem "www" (ex: paperstreet.com.br)
-  instagramProfile: "A Definir", // Sem o @
+  email: "contato", // Email desejado pelo cliente (ex: contato)
+  domain: "julianoaleixoadvocacia.com.br", // Sem "www" (ex: paperstreet.com.br)
+  instagramProfile: "adv.julianoaleixo", // Sem o @
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
 };
@@ -30,19 +30,21 @@ const LpContent = {
     textArea: {
       title: (
         <h1>
-          A Definir <span className="text-primary">A Definir</span>A Definir
-          <span className="text-primary"> A Definir</span>?
+          Sabia que <span className="text-primary">você </span>pode ter direito
+          ao
+          <span className="text-primary"> BPC/LOAS</span>?
         </h1>
       ),
-      subtitle: "A Definir",
-      buttonLabel: "A Definir",
-      ctaButtonAriaLabel: "A Definir",
+      subtitle:
+        "Descubra como garantir o seu benefício e assegurar uma vida digna para quem mais precisa. Suporte especializado para você e sua família.",
+      buttonLabel: "Quero falar com um especialista",
+      ctaButtonAriaLabel: "Quero falar com um especialista",
     },
   },
   features: {
     sectionHeader: {
-      miniTag: "A Definir",
-      title: "A Definir",
+      miniTag: "CONSIGA SEU BPC/LOAS",
+      title: "Quem pode solicitar?",
     },
     cards: {
       card1: {
@@ -57,15 +59,18 @@ const LpContent = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-history"
+            class="lucide lucide-accessibility"
           >
-            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-            <path d="M3 3v5h5" />
-            <path d="M12 7v5l4 2" />
+            <circle cx="16" cy="4" r="1" />
+            <path d="m18 19 1-7-6 1" />
+            <path d="m5 8 3-3 5.5 3-2.36 3.5" />
+            <path d="M4.24 14.5a5 5 0 0 0 6.88 6" />
+            <path d="M13.76 17.5a5 5 0 0 0-6.88-6" />
           </svg>
         ),
-        title: "A Definir",
-        description: "A Definir",
+        title: "Idosos e pessoas com deficiência",
+        description:
+          "Se você ou um familiar se encaixa nos critérios do BPC/LOAS e teve o benefício negado, atuamos para garantir seu direito com agilidade e segurança.",
       },
       card2: {
         icon: (
@@ -79,15 +84,15 @@ const LpContent = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-triangle-alert"
+            class="lucide lucide-ban"
           >
-            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
-            <path d="M12 9v4" />
-            <path d="M12 17h.01" />
+            <circle cx="12" cy="12" r="10" />
+            <path d="m4.9 4.9 14.2 14.2" />
           </svg>
         ),
-        title: "A Definir",
-        description: "A Definir",
+        title: "Benefício negado ou cancelado",
+        description:
+          "Se seu pedido foi indeferido ou o benefício foi cancelado injustamente, recorremos à justiça para restabelecer seu direito ao benefício.",
       },
       card3: {
         icon: (
@@ -101,16 +106,18 @@ const LpContent = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-frown"
+            class="lucide lucide-file-text"
           >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
-            <line x1="9" x2="9.01" y1="9" y2="9" />
-            <line x1="15" x2="15.01" y1="9" y2="9" />
+            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            <path d="M10 9H8" />
+            <path d="M16 13H8" />
+            <path d="M16 17H8" />
           </svg>
         ),
-        title: "A Definir",
-        description: "A Definir",
+        title: "Documentação incompleta",
+        description:
+          "Auxiliamos na organização e apresentação de toda a documentação necessária, eliminando barreiras que impedem o acesso ao BPC/LOAS.",
       },
       card4: {
         icon: (
@@ -131,8 +138,9 @@ const LpContent = {
             <path d="M12 18V6" />
           </svg>
         ),
-        title: "A Definir",
-        description: "A Definir",
+        title: "Revisão do benefício",
+        description:
+          "Se o valor recebido não corresponde ao que você tem direito, buscamos a revisão do benefício para assegurar um pagamento justo e atualizado.",
       },
     },
   },
@@ -143,23 +151,30 @@ const LpContent = {
       alt: "Logomarca",
     },
     sectionHeader: {
-      miniTag: "A Definir",
-      title: "A Definir",
+      miniTag: "TRADIÇÃO EM DIREITO PREVIDENCIÁRIO",
+      title: "Quem é Dr Juliano Aleixo",
     },
     paragraph: (
       <p>
-        A Definir
+        Na minha rotina diária, entendo que rapidez é fundamental para nossos
+        clientes, especialmente em questões previdenciárias. Por isso, atuo de
+        forma ágil e estratégica, sem comprometer a qualidade. Com foco em
+        garantir que seus direitos sejam resguardados com eficiência e
+        determinação.
         <br />
-        <br /> A Definir
+        <br /> Independentemente do seu problema previdenciário, estou pronto
+        para oferecer a melhor solução jurídica. Entre em contato com Juliano
+        Aleixo Advocacia e veja como podemos ser decisivos na defesa dos seus
+        direitos.
       </p>
     ),
-    buttonLabel: "A Definir",
+    buttonLabel: "Falar com um especialista",
     ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
   },
   whyUs: {
     sectionHeader: {
-      miniTag: "A Definir",
-      title: "A Definir",
+      miniTag: "A MELHOR ESCOLHA",
+      title: "Por que nos escolher pra te defender?",
     },
     cards: {
       card1: {
@@ -187,8 +202,9 @@ const LpContent = {
             <path d="M19.967 17.484A4 4 0 0 1 18 18" />
           </svg>
         ),
-        title: "A Definir",
-        description: "A Definir",
+        title: "Estratégia personalizada para garantir seu BPC/LOAS",
+        description:
+          "Vamos examinar seu pedido de BPC/LOAS com atenção e cuidado. Juntos, vamos criar uma estratégia personalizada para garantir que você receba o benefício que merece. Conte com nossa ajuda em cada passo do caminho!",
       },
       card2: {
         icon: (
@@ -211,8 +227,9 @@ const LpContent = {
             <path d="m17.5 15.5 2-2" />
           </svg>
         ),
-        title: "A Definir",
-        description: "A Definir",
+        title: "Soluções sob medida para seu BPC/LOAS",
+        description:
+          "Elaboramos um plano de ação especialmente para o seu pedido de BPC/LOAS, com o objetivo de resolver tudo de forma rápida e eficiente. Cada passo que damos é pensado para garantir que seus interesses estejam sempre em primeiro lugar. Estamos aqui para ajudar a transformar essa situação em uma solução concreta para você.",
       },
       card3: {
         icon: (
@@ -235,8 +252,9 @@ const LpContent = {
             <path d="M3 4h8" />
           </svg>
         ),
-        title: "A Definir",
-        description: "A Definir",
+        title: "Compromisso total com sua aprovação",
+        description:
+          "Estamos totalmente comprometidos com o seu pedido de BPC/LOAS, defendendo seus direitos a cada etapa do processo. Com nossa ajuda, você pode ter a certeza de que estamos focados em garantir sua aprovação, cuidando de cada detalhe para que você alcance o resultado desejado.",
       },
       card4: {
         icon: (
@@ -258,19 +276,20 @@ const LpContent = {
             <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
           </svg>
         ),
-        title: "A Definir",
-        description: "A Definir",
+        title: "Experiência que traz confiança",
+        description:
+          "Com vasta experiência em solicitações de BPC/LOAS, estou aqui para garantir que seu processo seja tratado com a máxima segurança e eficiência. Estarei ao seu lado em cada passo, cuidando para que seus direitos sejam respeitados e que você receba o benefício que merece. Conte comigo para fazer a diferença na sua jornada!",
       },
     },
   },
   cta: {
     bgImg: bgImg,
     sectionHeader: {
-      miniTag: "A Definir",
-      title: "A Definir",
-      subtitle: `A Definir`,
+      miniTag: "NÃO PERCA MAIS TEMPO",
+      title: "Garanta seu BPC/LOAS agora mesmo!",
+      subtitle: `O escritório Juliano Aleixo Advocacia está aqui para ajudar você. Nossa equipe especializada em direito previdenciário pode orientá-lo em todo o processo para assegurar que você receba o BPC/LOAS que tem direito. Não deixe que dificuldades financeiras ou burocráticas impeçam você de acessar o benefício que merece.`,
     },
-    buttonLabel: "A Definir",
+    buttonLabel: "Quero falar com um especialista",
     ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
   },
   contact: {
