@@ -1,7 +1,16 @@
-export default function ContactCardLP({ icon, label, description }) {
+import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
+
+export default function ContactCardLP({
+  icon,
+  label,
+  description,
+  animate = true,
+}) {
+  const Animation = animate ? MotionDivDownToUp : "div";
+
   return (
     <>
-      <div className="flex flex-wrap bg-white p-[16px]">
+      <Animation className="flex flex-wrap bg-white p-[16px]">
         <div className="flex gap-[20px]">
           <div className="h-[60px] w-[60px] bg-primary flex justify-center items-center">
             {icon}
@@ -13,7 +22,7 @@ export default function ContactCardLP({ icon, label, description }) {
             </p>
           </div>
         </div>
-      </div>
+      </Animation>
     </>
   );
 }
