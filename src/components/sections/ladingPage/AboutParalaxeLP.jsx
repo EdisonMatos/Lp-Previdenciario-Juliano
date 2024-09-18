@@ -3,6 +3,7 @@ import Button from "../../interactives/Button";
 import SectionArea from "../../sectionElements/SectionArea";
 import SectionHeader from "../../sectionElements/SectionHeader";
 import SectionWrapper from "../../sectionElements/SectionWrapper";
+import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 
 export default function AboutParalaxeLP() {
   return (
@@ -18,13 +19,15 @@ export default function AboutParalaxeLP() {
         <div className="flex justify-center w-full bg-black bg-opacity-80">
           <SectionArea>
             <SectionWrapper>
-              <div className="gap-y-[60px] flex flex-col items-center tablet2:flex-row tablet2:w-[100%] tablet2:justify-between tablet2:gap-[120px]">
-                <img
-                  src={LpContent.about.logo.logoImg}
-                  alt={LpContent.about.logo.alt}
-                  className="w-[90%] tablet2:w-[30%] desktop1:w-[40%]"
-                />
-                <div className="tablet2:w-[60%]">
+              <div className="gap-y-[40px] flex flex-col items-center desktop1:flex-row desktop1:w-[100%] desktop1:justify-between desktop1:gap-[120px]">
+                <MotionDivDownToUp className="w-[100%] tablet2:w-[60%] desktop1:w-[48%]">
+                  <img
+                    src={LpContent.about.logo.logoImg}
+                    alt={LpContent.about.logo.alt}
+                    className=" rounded-lg"
+                  />
+                </MotionDivDownToUp>
+                <div className="desktop1:w-[60%]">
                   <SectionHeader
                     className="text-center"
                     miniTitle={LpContent.about.sectionHeader.miniTag}
@@ -32,9 +35,11 @@ export default function AboutParalaxeLP() {
                     color=""
                     type="article"
                   />
-                  <p className="font-mainFont mb-[36px]">
-                    {LpContent.about.paragraph}
-                  </p>
+                  <MotionDivDownToUp>
+                    <p className="font-mainFont mb-[36px]">
+                      {LpContent.about.paragraph}
+                    </p>
+                  </MotionDivDownToUp>
                   <div className="w-full">
                     <Button
                       aria-label={LpContent.hero.textArea.ctaButtonAriaLabel}
